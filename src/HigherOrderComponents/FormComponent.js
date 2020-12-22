@@ -16,7 +16,6 @@ const HigherOrderComponent = OldComponent => {
         }
 
         handleInputChange = (e) =>{
-            console.log(e.target.name, e.target.value)
             this.setState({ [e.target.name] : e.target.value })
             if( [e.target.name+'Error'] !== '' ){
                 this.setState({ [e.target.name+'Error'] : '' })
